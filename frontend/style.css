@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7f9fc;
+    background: #f4f6f9; /* Nền sáng dễ chịu */
     margin: 0;
     padding: 0;
     display: flex;
@@ -8,55 +8,68 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
+    color: #2c3e50; /* Màu chữ tối cho dễ đọc */
 }
 
 h1 {
-    color: #333;
-    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #34495e; /* Màu xám đậm cho tiêu đề */
 }
 
 table {
-    width: 85%;
-    margin-top: 20px;
+    width: 90%;
+    margin: 40px auto;
     border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Nền trắng cho bảng */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Shadow nhẹ */
     border-radius: 8px;
-    overflow: hidden;
-    margin: auto; /* Căn giữa bảng */
 }
 
 th, td {
-    padding: 16px;
-    text-align: left;
-    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ecf0f1;
     font-size: 16px;
 }
 
 th {
-    background-color: #2c3e50;
+    background-color: #2980b9; /* Màu xanh dương đậm cho header */
     color: white;
     font-weight: bold;
 }
 
 tr:nth-child(even) {
-    background-color: #ecf0f1;
+    background-color: #ecf0f1; /* Màu nền bảng sáng */
 }
 
 tr:hover {
-    background-color: #dfe6e9;
+    background-color: #d5dbdb; /* Màu nền khi hover */
+    cursor: pointer;
 }
 
 .increase {
-    color: green;
+    color: #27ae60; /* Màu xanh lá cho tăng */
     font-weight: bold;
 }
 
 .decrease {
-    color: red;
+    color: #e74c3c; /* Màu đỏ cho giảm */
     font-weight: bold;
 }
 
-.volume {
-    text-align: right;
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
