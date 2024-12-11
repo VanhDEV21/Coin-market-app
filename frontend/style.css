@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 40px;
+}
+
+table {
+    width: 85%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: auto; /* Căn giữa bảng */
+}
+
+th, td {
+    padding: 16px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+tr:hover {
+    background-color: #dfe6e9;
+}
+
+.increase {
+    color: green;
+    font-weight: bold;
+}
+
+.decrease {
+    color: red;
+    font-weight: bold;
+}
+
+.volume {
+    text-align: right;
+}
