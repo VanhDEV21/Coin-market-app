@@ -27,9 +27,10 @@ app.get('/top-coins',async(req,res)=>{
         const coins = response.data.data.map(coin=>({
             name: coin.name,
             symbol: coin.symbol,
-            volume_24h: coin.quote.USD.volume_24h,
             change_1h: coin.quote.USD.percent_change_1h,
-            change_24h: coin.quote.USD.percent_change_24h
+            change_24h: coin.quote.USD.percent_change_24h,
+            volume_24h: coin.quote.USD.volume_24h
+            
         }));
         res.json(coins);
     } catch (error) {
